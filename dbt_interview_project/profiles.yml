@@ -1,0 +1,10 @@
+dbt_interview_project:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      role: ACCOUNTADMIN
+      warehouse: COMPUTE_WH
+      database: DBT_INTERVIEW_DB
+      schema: DEV
+      threads: 8
